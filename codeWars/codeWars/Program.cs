@@ -1005,3 +1005,5 @@ public class Kata
         return 0;//if arr[] == 0, return 0;
     }
 }
+// solution... if statement... if array.sum is less than zero, return zero. 
+//else if use the string sum with negs removed or turned into positives and readded. 
