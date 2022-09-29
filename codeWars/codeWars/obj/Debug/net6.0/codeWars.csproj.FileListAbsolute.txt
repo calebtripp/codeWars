@@ -1,0 +1,5 @@
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.csproj.AssemblyReference.cache
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.AssemblyInfoInputs.cache
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.AssemblyInfo.cs
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.csproj.CoreCompileInputs.cache
