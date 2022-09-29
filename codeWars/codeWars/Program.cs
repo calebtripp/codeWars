@@ -948,62 +948,65 @@
 //}
 //??
 
-using System;
-using System.Linq;
-using System.Collections;
-using System.Net.WebSockets;
-using System.Collections.ObjectModel;
-using System.Reflection;
-using System.Collections.Generic;
-
-public class Kata
-{
-   
-    public static int PositiveSum(int[] arr)
-
-    {
-        foreach (var item in arr)
-        {
-            List<int> negList = new List<int>();
-
-            int negSum;
-            if (item > 0 && item! < 0)
-            {
-                return arr.Sum();
-
-            }
-            //else if (item < 0)
-            //{
-            //    negList.Add(item);
-            //    negSum = (negList.Sum() * -1);
-            //    return (arr.Sum() + negSum);             // Q for John, will a foreach allow you to iterate through like a for and add indexed value (i) 
-            //}
-        }
-
-          //  negList.Contains();  - is there a simple way to identify it there are negative numbers?
 
 
-        for (int i = 0; i < arr.Length; i++)
-        {           
-            List<int> posList = new List<int>();
+/////////////////////////////////////
+//using System;
+//using System.Linq;
+//using System.Collections;
+//using System.Net.WebSockets;
+//using System.Collections.ObjectModel;
+//using System.Reflection;
+//using System.Collections.Generic;
 
-            if (i > 0)
-            { 
-                posList.Add(arr[i]);
-            }
-            return posList.Sum(); 
-            
-            List<int> negList2 = new List<int>();
-            var negList2Sum = negList2.Sum();
-            if (i < 0)
-            { 
-                negList2.Add(arr[i]);
-            }
-            return ((negList2Sum * -1) + arr.Sum()); 
-        }
+//public class Kata
+//{
 
-        return 0;//if arr[] == 0, return 0;
-    }
-}
+//    public static int PositiveSum(int[] arr)
+
+//    {
+//        foreach (var item in arr)
+//        {
+//            List<int> negList = new List<int>();
+
+//            int negSum;
+//            if (item > 0 && item! < 0)
+//            {
+//                return arr.Sum();
+
+//            }
+//            //else if (item < 0)
+//            //{
+//            //    negList.Add(item);
+//            //    negSum = (negList.Sum() * -1);
+//            //    return (arr.Sum() + negSum);             // Q for John, will a foreach allow you to iterate through like a for and add indexed value (i) 
+//            //}
+//        }
+
+//          //  negList.Contains();  - is there a simple way to identify it there are negative numbers?
+
+
+//        for (int i = 0; i < arr.Length; i++)
+//        {           
+//            List<int> posList = new List<int>();
+
+//            if (i > 0)
+//            { 
+//                posList.Add(arr[i]);
+//            }
+//            return posList.Sum(); 
+
+//            List<int> negList2 = new List<int>();
+//            var negList2Sum = negList2.Sum();
+//            if (i < 0)
+//            { 
+//                negList2.Add(arr[i]);
+//            }
+//            return ((negList2Sum * -1) + arr.Sum()); 
+//        }
+
+//        return 0;//if arr[] == 0, return 0;
+//    }
+//}
 // solution... if statement... if array.sum is less than zero, return zero. 
 //else if use the string sum with negs removed or turned into positives and readded. 

@@ -908,10 +908,53 @@
 //        return ($"Hello, {name} how are you doing today?");
 //    }
 //}
+/////////find the first non consecutive number
+///
+//working solution - i had such a hard time because i thought it could be increased by any math function , any amount. 
 
 //using System;
-//using System.Collections.Generic;
-//using System.ComponentModel.Design;
+//public class Kata
+//{
+//    public static object FirstNonConsecutive(int[] arr)
+//    {
+//        for (int i = 1; i < arr.Length; i++)
+//        {
+//            if (arr[i] != arr[i - 1] + 1)
+//            {
+//                return arr[i];
+//            }
+//        }
+//        return null;
+//    }
+//}
+// another working solution
+//using System;
+//using System.Linq;
+
+//public class Kata
+//{
+//    public static object FirstNonConsecutive(int[] arr)
+//    {
+//        var nonConsec = arr.Where((n, index) => index > 0 && n != arr[index - 1] + 1);
+//        if (nonConsec.Count() > 0)
+//            return nonConsec.First();
+//            return null;
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //public class Kata
 //{
@@ -922,22 +965,22 @@
 //        arr[0] = arr[iStart];
 //        foreach (int checkedIndex in arr)
 //        {
-//           // if ( is arr.TrueForAll)
-//                {
-//                return "Nonsense"; 
+//            // if ( is arr.TrueForAll)
+//            {
+//                return "Nonsense";
 //            }
-              
+
 //            //if (checkedIndex < arr.Length)  
 //            //arr[checkedIndex]++;    
 //        }
 
-//       var convertedToString = arr.ToString(cTS);
+//        var convertedToString = arr.ToString(cTS);
 
-//    convertedToString.TrueForAll((arr[1] - arr[0]))
+//        convertedToString.TrueForAll((arr[1] - arr[0]))
 
 
 
-//        array 1 - Array[2] = Array 3 - Array 2         
+//        array 1 - Array[2] = Array 3 - Array 2
 
 
 //        if (iStart.CompareTo[2]) == [2].CompareTo[3])
@@ -966,21 +1009,41 @@
 
 //    Console.WriteLine("The given index is not the start index ");
 
-//// FIND THE FIRST ELEMENT OF AN ARRAY THAT IS NOT CONSECUTIVE
+//    // FIND THE FIRST ELEMENT OF AN ARRAY THAT IS NOT CONSECUTIVE
 
-////if whole array is consecutive, return null
-////array will always have at least 2 members
-////the numbers will ascend
-////the numbers could be pos or neg.
+//    //if whole array is consecutive, return null
+//    //array will always have at least 2 members
+//    //the numbers will ascend
+//    //the numbers could be pos or neg.
+
+//    Regex??
+
+//    possible solution?
+// if difference between index 0 and 1 is different than difference between 1 and 2, than 2 is not consecutive.
+
+//Solved
+//using System.Numerics;
+//public class Kata
+//{
+//    public static int SaleHotDogs(int n)
+//    {
+//        if (n < 5) return 100 * n;
+//        if (n >= 5 && n < 10) return 95 * n;
+//        if (n >= 10) return 90 * n;
+//        else return 0;
+//    }
+//}
+// also ternary statement (includes arguments (, . .= within statement, example  iuf ? if.=9dfgfd: .+sdfs
 
 
+//Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accept
+//1 parameters:n, n is the number of customers to buy hotdogs, different numbers have different
+//prices (refer to the following table), return a number that the customer need to pay how much money.
 
-//possible solution?
-// if difference between index 0 and 1 is different than difference between 1 and 2, than 2 is not consecutive. 
+//number	price (cents)
+//n < 5   100
+//n >= 5 and n< 10	95
+//n >= 10	90
 
-
-
-
-
-
+// new kata
 
