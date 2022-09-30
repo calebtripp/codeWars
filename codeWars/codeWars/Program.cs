@@ -1090,7 +1090,7 @@
 //        var lowN = numbers.Min();
 //        var highN = numbers.Max();
 //        var answer = numbers.Sum() - lowN - highN;
-       
+
 //        if (numbers.Length > 1) return answer;
 //        else return 0;        
 //    }
@@ -1118,3 +1118,4 @@
 //{
 //    public static int Sum(int[] n) => (n?.Length ?? 0) > 1 ? n.Sum() - n.Max() - n.Min() : 0;
 //}
+

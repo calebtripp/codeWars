@@ -1045,5 +1045,50 @@
 //n >= 5 and n< 10	95
 //n >= 10	90
 
-// new kata
+// new kata sort array by string length
 
+// algo
+//sort array of strings from shortest to longest
+//return sorted array. 
+
+//using System;
+//using System.Linq;
+//using System.Collections;
+//using System.Net.WebSockets;
+//using System.Collections.ObjectModel;
+//using System.Reflection;
+//using System.Collections.Generic;
+//public class Kata
+//{
+//    public static string[] SortByLength(string[] array)
+//    {
+//        Array.Sort(array, (x, y) => x.Length.CompareTo(y.Length));
+//        return array;
+//    }
+//}
+// new kata grasshopper summation
+//algo
+//
+
+using System;
+using System.Reflection.Metadata.Ecma335;
+
+using System.Linq;
+using System.Collections;
+using System.Net.WebSockets;
+using System.Collections.ObjectModel;
+using System.Reflection;
+using System.Collections.Generic;
+public static class Kata
+{
+    public static int summation(int num)
+    {       
+        var numberList = new List<int>();
+        
+        for (int i = 0; i <= num; i++)
+        {
+            numberList.Add(i);  
+        }
+        return numberList.Sum();
+    }
+}
