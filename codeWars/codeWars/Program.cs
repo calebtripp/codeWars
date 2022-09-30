@@ -950,7 +950,7 @@
 
 
 
-/////////////////////////////////////
+///////////////////////////////////////
 //using System;
 //using System.Linq;
 //using System.Collections;
@@ -983,30 +983,138 @@
 //            //}
 //        }
 
-//          //  negList.Contains();  - is there a simple way to identify it there are negative numbers?
+//        //  negList.Contains();  - is there a simple way to identify it there are negative numbers?
 
 
 //        for (int i = 0; i < arr.Length; i++)
-//        {           
+//        {
 //            List<int> posList = new List<int>();
 
 //            if (i > 0)
-//            { 
+//            {
 //                posList.Add(arr[i]);
 //            }
-//            return posList.Sum(); 
+//            return posList.Sum();
 
 //            List<int> negList2 = new List<int>();
 //            var negList2Sum = negList2.Sum();
 //            if (i < 0)
-//            { 
+//            {
 //                negList2.Add(arr[i]);
 //            }
-//            return ((negList2Sum * -1) + arr.Sum()); 
+//            return ((negList2Sum * -1) + arr.Sum());
 //        }
 
 //        return 0;//if arr[] == 0, return 0;
 //    }
 //}
-// solution... if statement... if array.sum is less than zero, return zero. 
+//solution... if statement... if array.sum is less than zero, return zero.
 //else if use the string sum with negs removed or turned into positives and readded. 
+
+// Solution working sum of positive numbers
+//using System;
+//using System.Linq;
+//using System.Collections;
+//using System.Collections.Generic;
+
+//public class Kata
+//{
+//    public static int PositiveSum(int[] arr)
+//    {
+//        var posList = new List<int>();
+
+//        for (int i = 0; i < arr.Length; i++)
+//        {
+//            if (arr[i] > 0)
+//                posList.Add(arr[i]);
+//        }
+//        return posList.Sum();
+//        if (arr.Sum() <= 0)
+//            return 0;
+//    }
+//}
+
+//using System;
+//using System.Linq;
+
+//public class Kata
+//{
+//    public static int PositiveSum(int[] arr)
+//    {
+//        return arr.Where(x => x > 0).Sum();
+//    }
+//}
+// another linq solution
+//using System;
+//using System.Linq;
+
+//public class Kata
+//{
+//    public static int PositiveSum(int[] arr)
+//    {
+//        return arr.Where(a => a > 0).Sum();
+//    }
+//}
+
+// NEW KATA Sum without highest and lowest number
+//algo
+//determine the highest number in an array
+//determine the lowest number in an array
+// factor out the highest and lowest numbers
+//add the remaining numbers in the array (or separate them out to another list then sum?
+
+//else return 0 
+
+// could sort then add all index except 0 and array.Length?
+
+
+/// LINQ Solution
+/// 
+//var anArray = new int[] { 1, 5, 7, 4, 2 };
+//var (number, index) = anArray.Select((n, i) => (n, i)).Min();
+
+
+
+//solved, works. main issue was ternary fail?? and order of code and array.Length == 0 for empty. FIRST
+//using System;
+//using System.Linq;
+//using System.Reflection.Metadata.Ecma335;
+
+//public static class Kata
+//{
+//    public static int Sum(int[] numbers)
+//    {
+//        if (numbers == null) return 0;
+//        if (numbers.Length == 0) return 0;
+
+//        var lowN = numbers.Min();
+//        var highN = numbers.Max();
+//        var answer = numbers.Sum() - lowN - highN;
+       
+//        if (numbers.Length > 1) return answer;
+//        else return 0;        
+//    }
+//}
+
+//  numbers.Length > 1 ? answer : 0  why oh why does this ternary not work?
+//another solution with linq
+//using System;
+//using System.Linq;
+
+//public static class Kata
+//{
+//    public static int Sum(int[] numbers)
+//    {
+//        return numbers == null || numbers.Length < 2
+//            ? 0
+//            : numbers.Sum() - numbers.Max() - numbers.Min();
+//    }
+//}
+
+//another 
+//    using System.Linq;
+
+//public static class Kata
+//{
+//    public static int Sum(int[] n) => (n?.Length ?? 0) > 1 ? n.Sum() - n.Max() - n.Min() : 0;
+//}
