@@ -801,10 +801,6 @@
 
 
 //using System.Net;
-/// <summary>
-/// 
-/// 
-/// </summary>
 // new kata basic subclasses, adam and eve
 
 //public class God
@@ -909,7 +905,6 @@
 //    }
 //}
 /////////find the first non consecutive number
-///
 //working solution - i had such a hard time because i thought it could be increased by any math function , any amount. 
 
 //using System;
@@ -1070,25 +1065,146 @@
 //algo
 //
 
-using System;
-using System.Reflection.Metadata.Ecma335;
+//using System;
+//using System.Reflection.Metadata.Ecma335;
 
-using System.Linq;
-using System.Collections;
-using System.Net.WebSockets;
-using System.Collections.ObjectModel;
-using System.Reflection;
+//using System.Linq;
+//using System.Collections;
+//using System.Net.WebSockets;
+//using System.Collections.ObjectModel;
+//using System.Reflection;
+//using System.Collections.Generic;
+//public static class Kata
+//{
+//    public static int summation(int num)
+//    {       
+//        var numberList = new List<int>();
+
+//        for (int i = 0; i <= num; i++)
+//        {
+//            numberList.Add(i);  
+//        }
+//        return numberList.Sum();
+//    }
+//}
+
+// kata century from year. 
+//given a year, return the century it's in.
+
+
+// years by 100 = century solved
+
+
+//public static class Kata
+//{
+//    public static int СenturyFromYear(int year)
+//    {
+//        if (year % 100 > 0) 
+//            return (year / 100);
+//        else return (year / 100) + 1;
+//    }
+//}
+// another solution
+//public static class Kata
+//{
+//    public static int СenturyFromYear(int year) => (year + 99) / 100;
+//}
+// new kata convert a number to a string solved
+//
+//using System;
+//public class Kata
+//{
+//    public static int StringToNumber(String str)
+//    {
+//        return Convert.ToInt32(str);
+//    }
+//}
+
+// new kata counting sheep
+
+// Consider an array/list of sheep where some sheep may be missing from their place.
+// We need a function that counts the number of sheep present in the array (true means present).
+//Hint: Don't forget to check for bad values like null/undefined
+
+//algo
+//if null / undefined, handle... how??
+
+//
+
+
+//solved
+//using System;
+
+//public static class Kata
+//{
+//    public static int CountSheeps(bool[] sheeps)
+//    {
+//        int sheepCount = 0;
+//        foreach (var sheep in sheeps)
+//        {
+//            if (sheep == true)
+//            {
+//                sheepCount ++;
+//            }           
+//        }
+//        return sheepCount;
+//    }
+//}
+
+// another solution - how does this work?
+//using System;
+//using System.Linq;
+
+//public static class Kata
+//{
+//    public static int CountSheeps(bool[] sheeps)
+//    {
+//        return sheeps.Count(s => s);
+//    }
+//}
+//another
+//using System;
+//using System.Linq;
+
+//public static class Kata
+//{
+//    public static int CountSheeps(bool[] sheeps)
+//    {
+//        return (int)sheeps.Count(x => x == true);
+//    }
+//}
+
+//new kata
+// Convert number to reversed array of digits
+
+//Convert number to reversed array of digits
+//Given a random non-negative number, you have to return 
+//    the digits of this number within an array in reverse order.
+
+using System;
 using System.Collections.Generic;
-public static class Kata
+
+namespace Solution
 {
-    public static int summation(int num)
-    {       
-        var numberList = new List<int>();
-        
-        for (int i = 0; i <= num; i++)
+    class Digitizer
+    {
+        public static long[] Digitize(long n)
         {
-            numberList.Add(i);  
-        }
-        return numberList.Sum();
+
+            var nonsense = n.ToString();
+            long[] newList = n.ToString
+                .ToArray();
+                Array.Reverse(n);
+            foreach (var num in collection)
+            {
+
+            }
+           return n.ToArray();
+                
+            .select
+                StringToArray();
+
+                
+                }
     }
 }

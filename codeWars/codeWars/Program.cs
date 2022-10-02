@@ -1119,3 +1119,4 @@
 //    public static int Sum(int[] n) => (n?.Length ?? 0) > 1 ? n.Sum() - n.Max() - n.Min() : 0;
 //}
 
+//CenturyFromYear(100);
