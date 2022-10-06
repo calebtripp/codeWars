@@ -1181,30 +1181,43 @@
 //Given a random non-negative number, you have to return 
 //    the digits of this number within an array in reverse order.
 
+//using System;
+//using System.Collections.Generic;
+
+//namespace Solution
+//{
+//    class Digitizer
+//    {
+//        public static long[] Digitize(long n)
+//        {
+
+//            var nonsense = n.ToString();
+//            long[] newList = n.ToString
+//                .ToArray();
+//                Array.Reverse(n);
+//            foreach (var num in collection)
+//            {
+
+//            }
+//           return n.ToArray();
+
+//            .select
+//                StringToArray();
+
+
+//                }
+//    }
+//}
 using System;
 using System.Collections.Generic;
 
-namespace Solution
+public static void Main([]args)
+{ 
+ string FizzBuzzChallenge(int fBChk)
 {
-    class Digitizer
-    {
-        public static long[] Digitize(long n)
-        {
-
-            var nonsense = n.ToString();
-            long[] newList = n.ToString
-                .ToArray();
-                Array.Reverse(n);
-            foreach (var num in collection)
-            {
-
-            }
-           return n.ToArray();
-                
-            .select
-                StringToArray();
-
-                
-                }
-    }
+    if (fBChk % 3 == 0) return "fizz";
+    if (fBChk % 5 == 0) return "buzz";
+    if (fBChk % 3 == 0 && fBChk % 5 == 0) return "fizzbuzz";
+    else return null;
+}
 }
