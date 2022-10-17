@@ -1208,16 +1208,11 @@
 //                }
 //    }
 //}
-using System;
-using System.Collections.Generic;
 
-public static void Main([]args)
-{ 
- string FizzBuzzChallenge(int fBChk)
-{
-    if (fBChk % 3 == 0) return "fizz";
-    if (fBChk % 5 == 0) return "buzz";
-    if (fBChk % 3 == 0 && fBChk % 5 == 0) return "fizzbuzz";
-    else return null;
-}
-}
+//string FizzBuzzChallenge(int fBChk)
+//{
+//    if (fBChk % 3 == 0) return "fizz";
+//    if (fBChk % 5 == 0) return "buzz";
+//    if (fBChk % 3 == 0 && fBChk % 5 == 0) return "fizzbuzz";
+//    else return null;
+//}

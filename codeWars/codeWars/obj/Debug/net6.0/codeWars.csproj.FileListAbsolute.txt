@@ -3,3 +3,13 @@ C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.
 C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.AssemblyInfoInputs.cache
 C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.AssemblyInfo.cs
 C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.csproj.CoreCompileInputs.cache
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\bin\Debug\net6.0\codeWars.exe
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\bin\Debug\net6.0\codeWars.deps.json
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\bin\Debug\net6.0\codeWars.runtimeconfig.json
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\bin\Debug\net6.0\codeWars.dll
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\bin\Debug\net6.0\codeWars.pdb
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.dll
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\refint\codeWars.dll
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.pdb
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\codeWars.genruntimeconfig.cache
+C:\Users\caleb\OneDrive\Desktop\Repos\codeWars\codeWars\codeWars\obj\Debug\net6.0\ref\codeWars.dll

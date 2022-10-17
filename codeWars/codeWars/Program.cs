@@ -1120,3 +1120,241 @@
 //}
 
 //CenturyFromYear(100);
+
+
+/// LINQ Solution
+/// 
+///
+
+
+//Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+//For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9
+
+//using System.Numerics;
+//public static class Kata
+//{
+//    public static int SquareSum(int[] numbers)
+//    {
+//        var sumList = new List<int>();
+//        foreach (var number in numbers)
+//        {
+
+//            var squares = number * number;
+//            sumList.Add(squares);
+//        }
+//        return sumList.Sum();
+//    }
+//}
+
+//Shorter with Lamda
+
+//    using System.Linq;
+//public static class Kata
+//{
+//    public static int SquareSum(int[] n) => n.Sum(i => i * i);
+//}
+
+//using System;
+//using System.Collections.Generic;
+
+//static void Main()
+//{
+
+//    var fizzChal = new FizzBuzz
+//    var fizzbuzziness = FizzBuzzChallenge(13); // does this work?
+//    Console.WriteLine(fizzbuzziness);
+//}
+//using System.Collections.Generic;
+//public class Kata
+//{
+//    public static int[] Maps(int[] x)
+//    {
+//        var x2 = new List <int> ();
+//        foreach (var item in x)
+//        {
+//            x2.Add (item*2);
+//        }
+//        return x2.ToArray();
+//    }
+//}
+
+////shorter solution, direct to array
+//using System.Linq;
+
+//public class Kata
+//{
+//    public static int[] Maps(int[] x)
+//    {
+//        return x.Select(e => e * 2).ToArray();
+//    }
+//}
+
+////another converting array 
+//    using System;
+//public class Kata
+//{
+//    public static int[] Maps(int[] x)
+//    {
+//        return Array.ConvertAll(x, n => n * 2);
+//    }
+//}
+
+
+//public class DivisibleNb
+//{
+//    public static bool isDivisible(long n, long x, long y)
+//    {    
+//        return (n % x == 0 && n % y == 0);
+//    }
+//}
+
+////first attempt
+//using System;
+//public class Kata
+//{
+//    public static string FindNeedle(object[] haystack)
+//    {
+//        foreach (var item in haystack)
+//        {
+//            if (item == "needle")
+//                return haystack.indexOf("needle");
+//        }
+//    }
+//}
+
+
+//using System;
+//using System.Linq;
+//public class Kata
+//{
+//    public static string FindNeedle(object[] haystack)
+//    {
+//        int index = Array.FindIndex(haystack, x => x.Contains("needle"));
+
+//        return $"found the needle at position {index}";
+//    }
+//}
+
+//var index = haystack.FindIndex(haystack, row => row.roar == "xyz");
+//foreach (var a in haystack)
+//{
+
+
+// if (item == "needle")
+//
+//return   indexOf("needle");
+//        haystack.FindIndex(haystack => haystack.Contains("needle");
+//        int indexOfValue = haystack.FindIndex(item => haystack.Contains("insert value from list"))
+
+//        int indexOfValue = myList.FindIndex(a => a.Contains("insert value from list"))
+//  
+//solution - missed array. and put actual array name in method. duh.
+//using System;
+
+//public class Kata
+//{
+//    public static string FindNeedle(object[] haystack)
+//    {    
+//        return $"found the needle at position {Array.FindIndex(haystack, a => a == "needle")}";
+//    }
+//}
+
+
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        foreach (char c in x)
+//        {
+//            Convert.ToInt32(c);
+//        }
+//        foreach (char c in x)
+//          {
+//            if (c < 5)
+//                x.Replace(c, '0');
+//            else if (c >= 5)
+//                x.Replace(c, '1');
+//        }
+//        return x;
+//    }
+//}
+//My Solution
+
+//using System;
+//using System.Text;
+//using System.Text.RegularExpressions;
+
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        string binString = x.Replace('1', '0')
+//                            .Replace('2', '0')
+//                            .Replace('3', '0')
+//                            .Replace('4', '0')
+//                            .Replace('5', '1')
+//                            .Replace('6', '1')
+//                            .Replace('7', '1')
+//                            .Replace('8', '1')
+//                            .Replace('9', '1');
+         
+//        return binString;
+//    }
+//}
+
+////another solution
+//using System.Linq;
+
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        return string.Concat(x.Select(a => a < '5' ? "0" : "1"));
+//    }
+//}
+
+////another solution builder
+//using System.Text;
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        StringBuilder builder = new StringBuilder();
+
+//        foreach (char t in x)
+//        {
+//            builder.Append(t >= '5' ? '1' : '0');
+//        }
+
+//        return builder.ToString();
+//    }
+//}
+
+////another regex
+//using System.Text.RegularExpressions;
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        x = Regex.Replace(x, "[4321]", "0");
+//        x = Regex.Replace(x, "[56789]", "1");
+//        return x;
+//    }
+//}
+////another
+//public class Kata
+//{
+//    public static string FakeBin(string x)
+//    {
+//        string result = "";
+
+//        foreach (char c in x)
+//            result += c < '5' ? "0" : "1";
+
+//        return result;
+//    }
+//}
