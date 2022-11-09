@@ -1276,10 +1276,28 @@
 //}
 //using System.Linq;
 //grasshopper personalized message
-public class Kata
-{
-    public static string Greet(string name, string owner)
-    {
-        return name == owner ? "Hello boss" : "Hello guest";        
-    }
-}
+//public class Kata
+//{
+//    public static string Greet(string name, string owner)
+//    {
+//        return name == owner ? "Hello boss" : "Hello guest";        
+//    }
+//}
+
+//Abbreviate a two word name
+
+//using System.Collections.Generic;
+//public class Kata
+//{    public static string AbbrevName(string name)
+//    {
+//        string[] splitName = name.Split(' ');
+//        List<string> initialList = new List<string>();
+//        foreach (var word in splitName)
+//        {
+//            initialList.Add(word[0].ToString().ToUpper());
+//        }
+//        return $"{initialList[0]}.{initialList[1]}";
+//    }
+//}
+
+//
