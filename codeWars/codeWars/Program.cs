@@ -1301,7 +1301,7 @@
 //                            .Replace('7', '1')
 //                            .Replace('8', '1')
 //                            .Replace('9', '1');
-         
+
 //        return binString;
 //    }
 //}
@@ -1358,3 +1358,106 @@
 //        return result;
 //    }
 //}
+
+// new kata regex validate pin code
+
+//using System;
+//using System.Net.NetworkInformation;
+//using System.Reflection;
+//using System.Text.RegularExpressions;
+//using System.Linq;////////////////////////////////////////////////regex one///////////////////////////////////////////////////////////////////////////////////////////
+
+//public class Kata
+//{
+
+
+//    static bool ValidatePin(string pin)
+//    {
+//       // return pin.Regex(@"^\d{4}|\d{6}");
+//       Regex r = new Regex(@"^[0-9]\d{4}\d{6}$");     
+//       return r.IsMatch(pin);
+        //   Regex r = new Regex(@"^\+?\d{0,2}\-?\d{4,5}\-?\d{5,6}");//.test(pin);
+        //class Regex Repesents an immutable regular expression.    
+
+        //  string[] str = { "+91-9678967101", "9678967101", "+91-9678-967101", "+91-96789-67101", "+919678967101" };
+        //Input strings for Match valid mobile number.    
+
+//    }
+
+//}
+
+        //  return (  );
+        ////  int.TryParse(pin);
+        //bool intQ = pin.Equals(int);
+        // return Convert.ToInt32(pin); 
+        // return (pin.Replace("[- ]", "").Trim().Count() == 4 || pin.Replace("-", "").Trim().Count() == 6) && int.TryParse(pin, out _);
+        //var yikes = pin.Length;
+        //pin.Replace("-", "a").Replace(" ", "a");
+        //bool numberPass = yikes == 4 || yikes == 6;
+
+        //return numberPass && int.TryParse(pin, out _);
+        //return (pin.Count() == 4 || pin.Count() == 6) && int.TryParse(pin, out _);
+        //Console.WriteLine(ValidatePin(pin));
+
+        // bool intP  = Convert.ToInt32(pin);
+        //   return (pin.Count() == 4 || pin.Count() == 6) && int.TryParse(pin, out _);
+
+        //foreach (var item in pin)
+        //{
+        //pin.Replace("-", "").Replace("+", "").Replace(" ", "").Trim();
+        //var yikes = pin.Count();
+        //bool numberPass = yikes == 4 || yikes == 6;
+
+        //return (numberPass && int.TryParse(pin, out _));
+        ////}
+       
+        // last before gave up and switched to regex. apparently the test called for - to be removed and string.replace doesnt replace??
+//        using System;
+//            using System.Collections.Generic;
+//            using System.Linq;
+
+//public class Kata
+//    {
+//        public static bool ValidatePin(string pin)
+//        {
+//            //pin.Replace("-", " ").Replace("+", " ").Trim();
+//            //var yikes = pin.Count();
+//            //bool numberPass = (yikes == 4 || yikes == 6);
+
+//            //return (numberPass && int.TryParse(pin, out _));
+           
+
+//        }
+//    }
+
+
+//}
+//    }
+//}
+
+//public static void Main(string[] args)
+//{
+//    string str = "";
+//    int intStr; bool intResultTryParse = int.TryParse(str, out intStr);
+//    if (intResultTryParse == true)
+//    {
+//        Console.WriteLine(intStr);
+//    }
+//    else
+//    {
+//        Console.WriteLine("Input is not in integer format");
+//    }
+//    Console.ReadLine();
+//}
+
+
+
+// return (!Regex.Match(pin, @"^(?=[0-9]*$)(?:.{4}|.{6})$").Success);
+//REGEX()
+///// algo - check that response is all integer
+///// check that response is 4 or 6 characters only
+///// return true or false.
+///// 
+//if (!Regex.Match(pin, @"^\d{5}$").Success)
+//{
+//    if (!Regex.Match(phoneTextBox.Text, @"^[1-9]\d{2}-[1-9]\d{2}-\d{4}$").Success)  

@@ -1216,3 +1216,70 @@
 //    if (fBChk % 3 == 0 && fBChk % 5 == 0) return "fizzbuzz";
 //    else return null;
 //}
+
+///working solution below
+//using System.Linq;
+//namespace Solution
+//{
+//    public static class ArraysInversion
+//    {
+//        public static int[] InvertValues(int[] input)
+//        {            
+//            for (int i = 0; i < input.Length; i++)
+//            {
+//             input[i] *= -1;
+//            }
+//            return input;            
+//        }
+//    }
+//}
+
+//using System.Linq;
+//namespace Converter
+//{
+//    public class Converter
+//    {
+//        public string dnaToRna(string dna)
+//        {
+//            foreach (var c in dna)
+//            {
+//                if (c == 'U')
+//                {
+//                    dna.Replace('U', 'T');
+//                }
+//                else
+//                {
+//                    dna.Replace('T', 'U');
+//                }
+//                //    : 'U';
+//                //if (c == 'U')
+//                //{
+
+//                //}
+
+//            }
+//            return dna;
+//        }
+//    }
+//}
+//public class Kata
+//{
+//    public static int Grow(int[] x)
+//    {
+
+//        foreach (var i in x)
+//        {
+//            i * [i]++;
+//        }
+//        return x.Sum();
+//    }
+//}
+//using System.Linq;
+//grasshopper personalized message
+public class Kata
+{
+    public static string Greet(string name, string owner)
+    {
+        return name == owner ? "Hello boss" : "Hello guest";        
+    }
+}
