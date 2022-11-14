@@ -1320,5 +1320,23 @@
 //        else return $"{name[0]}, {name[1]} and {(arrayCounter -= 2)} others like this";
 //    }
 //}
+// vowel COunt
+//using System;
+//using System.Linq;
+
+//public static class Kata
+//{
+//    public static int GetVowelCount(string str)
+//    {
+//        int vowelCount = 0;
+
+//        foreach (var vowel in str)
+//        {
+//            if (vowel == 'a' || vowel == 'e' || vowel == 'i' || vowel == 'o' || vowel == 'u')
+//            { vowelCount++; }            
+//        }
+//        return vowelCount;
+//    }
+//}
 
 
