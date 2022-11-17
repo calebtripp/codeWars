@@ -1338,5 +1338,48 @@
 //        return vowelCount;
 //    }
 //}
+// correct the mistakes character recog software kata
+//using System.Linq;
+//using System.Collections;
+//using System.Collections.Generic;
+//using System.Diagnostics.Metrics;
 
+//public class Kata
+//{
+//    public static string Correct(string text)
+//    {
+//        string textFixO = text.Replace('0', 'O');
+//        string textFixOI = textFixO.Replace('1', 'I');
+//        string textFixOIS = textFixOI.Replace('5', 'S');
+//        return textFixOI;
+//    }
+//}
 
+// better solution: .Replace
+//public class Kata
+//{
+//    public static string Correct(string text)
+//    {
+//        return text
+//        .Replace("0", "O")
+//        .Replace("1", "I")
+//        .Replace("5", "S");
+//    }
+//}
+
+//Count the divisors of a number kata
+//public class Kata
+//{
+//    public static int Divisors(int n)
+//    {
+//        int count = 0;
+//        for (int i = 1; i <= 500000; i++)
+//        {
+//            if (n%i == 0)
+//            {
+//                count++;
+//            }
+//        }
+//        return count;
+//    }
+//}
