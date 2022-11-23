@@ -1384,31 +1384,31 @@
 //    }
 //}
 
-//Highest and Lowest Kata
-using System;
-using System.Collections.Generic;
-using System.Linq;
+//Highest and Lowest Kata //////////////////////////////////////////////////////////////////////not complete
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
 
 
-public static class Kata
-{    
-    public static string HighAndLow(string numbers)
-    {
-      //  numbers.Split(' ');
-        var nums = new List<int>();
-        
-        foreach (var number in numbers)
-        {
-            nums.Add(number);
-        }
+//public static class Kata
+//{    
+//    public static string HighAndLow(string numbers)
+//    {
+//      //  numbers.Split(' ');
+//        var nums = new List<int>();
 
-       
-        var low = nums.Min();
-        var high = nums.Max();
-        string highLow = $"{high} {low}";
-        return highLow;
-    }
-}
+//        foreach (var number in numbers)
+//        {
+//            nums.Add(number);
+//        }
+
+
+//        var low = nums.Min();
+//        var high = nums.Max();
+//        string highLow = $"{high} {low}";
+//        return highLow;
+//    }
+//}
 
 //// new Kata find the smallest integer in the array
 
@@ -1422,11 +1422,48 @@ public static class Kata
 //}
 
 //Kata Shortest Word
+//algo
+//get the count of each element in the string.  for loop, poss string to array? by element array? split first?
+//return the length of the shortest element. 
 
-public class Kata
-{
-    public static int FindShort(string s)
-    {
-        return 0;
-    }
-}
+//possible tools
+//Enumerable.Count()
+
+//using System.Linq;
+//using System.Collections.Generic;
+//using System;
+//public class Kata
+//{
+//    //allows test 
+//    //public static void Main ()
+//    //{
+//    //    string s = "bitcoin take over the world maybe who knows perhaps";
+//    //    Console.WriteLine(FindShort(s));
+//    //}
+
+
+//    public static int FindShort(string s)
+//    {
+//       var sSplit = s.Split(" ");    
+//       var elementCount = sSplit[0].Length;
+ 
+//        foreach (var item in sSplit)
+//        {
+//            if (item.ToString().Length < elementCount)
+//            {
+//                elementCount = item.ToString().Length;
+//            }
+//        }   
+//        return elementCount;
+//    }
+//}
+
+//Another solution using min method - duh. 
+//    using System.Linq;
+//public class Kata
+//{
+//    public static int FindShort(string s)
+//    {
+//        return s.Split(' ').Min(x => x.Length);
+//    }
+//}
