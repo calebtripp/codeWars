@@ -1383,3 +1383,50 @@
 //        return count;
 //    }
 //}
+
+//Highest and Lowest Kata
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+public static class Kata
+{    
+    public static string HighAndLow(string numbers)
+    {
+      //  numbers.Split(' ');
+        var nums = new List<int>();
+        
+        foreach (var number in numbers)
+        {
+            nums.Add(number);
+        }
+
+       
+        var low = nums.Min();
+        var high = nums.Max();
+        string highLow = $"{high} {low}";
+        return highLow;
+    }
+}
+
+//// new Kata find the smallest integer in the array
+
+//using System.Linq;
+//public class Kata
+//{
+//    public static int FindSmallestInt(int[] args)
+//    {
+//        return args.Min();
+//    }
+//}
+
+//Kata Shortest Word
+
+public class Kata
+{
+    public static int FindShort(string s)
+    {
+        return 0;
+    }
+}
