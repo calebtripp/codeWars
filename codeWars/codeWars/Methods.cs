@@ -1527,17 +1527,26 @@
 // return string of odd or even
 
 
-public class Kata
-{
-    public static string OddOrEven(int[] array)
-    {
-        string solution = "";  
+//public class Kata
+//{
+//    public static string OddOrEven(int[] array)
+//    {
+//        string solution = "";  
 
-        if (array.Sum() % 2 == 0)
-        { solution = "even"; }
-        else 
-        { solution = "odd"; }
+//        if (array.Sum() % 2 == 0)
+//        { solution = "even"; }
+//        else 
+//        { solution = "odd"; }
 
-        return solution;       
-    }
-}
+//        return solution;       
+//    }
+//}
+//new kata Sum Arrays
+
+//public class Kata
+//{
+//    public static double SumArray(double[] array)
+//    {
+//        return array.Sum();
+//    }
+//}
