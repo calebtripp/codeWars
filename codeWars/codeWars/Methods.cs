@@ -1550,3 +1550,76 @@
 //        return array.Sum();
 //    }
 //}
+
+
+// new Kata Complementary DNA
+//using System;
+//using System.Collections.Generic;
+//using System.Diagnostics.Metrics;
+//using System.Linq;
+//public class DnaStrand
+//{
+//    static void Main()
+//    {
+//        string dna = "ATTGC";
+//        string shouldBe = "TAACG";
+
+//        Console.WriteLine(MakeComplement(dna));
+
+
+//    }
+//    public static string MakeComplement(string dna)
+//    {
+//        string compDna = "";
+
+//        foreach (var letter in dna)
+//        {
+//            switch (letter)
+//            {
+//                case 'A':
+//                    compDna += 'T';
+//                    break;
+//                case 'T':
+//                    compDna += 'A';
+//                    break;
+//                case 'C':
+//                    compDna += 'G';
+//                    break;
+//                case 'G':
+//                    compDna += 'C';
+//                    break;
+//            }
+//        }
+//        return compDna;
+//    }
+//}
+
+//Another solution with simple return - the replace is what was getting me. 
+//using System;
+//using System.Linq;
+
+//public class DnaStrand
+//{
+//    public static string MakeComplement(string dna)
+//    {
+//        return string.Concat(dna.Select(GetComplement));
+//    }
+
+//    public static char GetComplement(char symbol)
+//    {
+//        switch (symbol)
+//        {
+//            case 'A':
+//                return 'T';
+//            case 'T':
+//                return 'A';
+//            case 'C':
+//                return 'G';
+//            case 'G':
+//                return 'C';
+//            default:
+//                throw new ArgumentException();
+//        }
+//    }
+//}
+
