@@ -1446,7 +1446,7 @@
 //    {
 //       var sSplit = s.Split(" ");    
 //       var elementCount = sSplit[0].Length;
- 
+
 //        foreach (var item in sSplit)
 //        {
 //            if (item.ToString().Length < elementCount)
@@ -1467,3 +1467,55 @@
 //        return s.Split(' ').Min(x => x.Length);
 //    }
 //}
+
+//Find the unique number kata
+
+
+//algo
+//compare each int in numbers.
+//return the one that doesn't compare
+//find a way to iterate through them. 
+// element at
+//using System.Collections.Generic;
+//using System.Linq;
+//using System;
+//using System.Globalization;
+
+//public class Kata
+//{
+//    //// for testing only
+//    //static void Main()
+//    //{
+//    //    var numbers = new List<int>();
+//    //    numbers.Add(1);
+//    //    numbers.Add(2);
+//    //    numbers.Add(2);
+//    //    numbers.Add(2);
+
+//    //    Console.WriteLine(GetUnique(numbers));
+//    //}
+
+
+
+//    public static int GetUnique(IEnumerable<int> numbers)
+//    {
+//        int unique = 0;
+
+//        var numbersList = numbers.ToList();
+//        numbersList.Sort();
+//        var numListIndex = (numbersList.Count() - 1);
+
+//        if (numbersList[0] == numbersList[1])
+//        {
+//            unique = numbersList[numListIndex];
+//        }
+
+//        else
+//        {
+//            unique = numbersList[0];
+//            Console.WriteLine(unique);
+//        }    
+//            return unique;  
+//    }
+//}
+
