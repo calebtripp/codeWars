@@ -1519,3 +1519,25 @@
 //    }
 //}
 
+// New Kata Odd or Even
+//algo
+//
+//sum of list of integers. 
+// determine if odd or even
+// return string of odd or even
+
+
+public class Kata
+{
+    public static string OddOrEven(int[] array)
+    {
+        string solution = "";  
+
+        if (array.Sum() % 2 == 0)
+        { solution = "even"; }
+        else 
+        { solution = "odd"; }
+
+        return solution;       
+    }
+}
