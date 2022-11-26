@@ -1642,4 +1642,29 @@
 
 //}
 
+//new kata object oriented piracy
 
+//using System;
+//public class Ship
+//{
+//    public int Draft;
+//    public int Crew;
+//    public bool worthIt;
+
+//    public Ship(int draft, int crew)
+//    {
+//        Draft = draft;
+//        Crew = crew;
+//    }
+
+//    public bool IsWorthIt()
+//    {
+//          bool worthIt = Draft - Convert.ToInt32(Crew * 1.5) > 20;
+//          return worthIt;
+//    }
+//}
+// simpler solution - the statement itself is a bool so I could have just returned that without declaring the variable. 
+//public bool IsWorthIt()
+//{
+//    return (Draft - Crew * 1.5) > 20;
+//}
