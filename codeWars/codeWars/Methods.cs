@@ -1668,3 +1668,17 @@
 //{
 //    return (Draft - Crew * 1.5) > 20;
 //}
+
+// new kata whats the real floor
+
+//using System;
+
+//public static class Kata
+//{
+//    public static int GetRealFloor(int n)
+//    {
+//        if (n > 13) return n - 2;
+//        else if (n <= 0) return n;
+//        else return n - 1;
+//    }
+//}
